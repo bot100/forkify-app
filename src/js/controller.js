@@ -126,6 +126,10 @@ async function controlAddRecipe(newRecipe) {
   }
 }
 
+function test() {
+  console.log("Test function");
+}
+
 const init = () => {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes); // Implementing Publisher-Subscriber pattern
@@ -134,7 +138,7 @@ const init = () => {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log("Welcome");
+  test();
 };
 
 init();
